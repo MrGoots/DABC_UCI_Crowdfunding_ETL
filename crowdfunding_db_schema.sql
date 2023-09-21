@@ -7,9 +7,9 @@ DROP TABLE IF EXISTS contacts;
 -- Create the names table
 CREATE TABLE contacts (
 	contact_id INT Primary Key,
-	category varchar(255) NOT NULL
-    first_name varchar(255) NOT NULL
-    last_name varchar(255) NOT NULL
+	category varchar(255) NOT NULL,
+    first_name varchar(255) NOT NULL,
+    last_name varchar(255) NOT NULL,
     email varchar(255) NOT NULL
 );
 
@@ -34,8 +34,8 @@ CREATE TABLE campaign (
     backers_count int NOT NULL,
     country varchar(3) NOT NULL,
     currency varchar(3) NOT NULL,
-    launched_date datetime NOT NULL,
-    target_date datetime NOT NULL,
+    launched_date date NOT NULL,
+    target_date date NOT NULL,
     category_id varchar(10)  NOT NULL,
     subcategory_id varchar(15)  NOT NULL,
     FOREIGN KEY (contact_id) REFERENCES contacts(contact_id),
