@@ -1,3 +1,7 @@
+
+DROP DATABASE IF EXISTS crowdfunding_db;
+CREATE DATABASE crowdfunding_db;
+
 -- Drop table if exists
 DROP TABLE IF EXISTS campaign;
 DROP TABLE IF EXISTS subcategory;
